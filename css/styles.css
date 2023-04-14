@@ -9,7 +9,7 @@ body {
     font-family: cursive;
     font-size: 20px;
     letter-spacing: 4px;
-    color: #274d8a
+    color: #fff
 }
 
 .logo-modal {
@@ -31,7 +31,7 @@ a:hover {
 header {
   width: 100vw;
   height: 100px;
-  background-color: #fff;
+  background-color: #102447;
   display: flex;
   align-items: center;
 }
@@ -62,11 +62,12 @@ header .item {
   margin-inline: 15%;
   font-size: 20px;
   letter-spacing: 3px;
-  color: #102447;
+  color: #fff;
+  font-family: cursive;
   padding: 5px 0;
   transition: all 0.1s ease;
-  border-bottom: 0px solid #64d6f4;
-  border-top: 0px solid #64d6f4;
+  border-bottom: 0px solid #fff;
+  border-top: 0px solid #fff;
   cursor: pointer;
 }
 
@@ -190,7 +191,7 @@ header .mobile-toggler {
 }
 
 .navb-button:hover {
-  background-color: #274d8a;
+  background-color: #ff9100;
   color: #fefefe;
 }
 
@@ -253,40 +254,38 @@ h1 {
     background-color: #ffffff0b;
 }
 
-h2, h3 {
+h2, h3, .cotizacion {
     color: #274d8a;
 }
 
-#nosotros p {
+p {
     font-size: large;
 }
 
 .card-body {
-    background-color: #00000011;
+    background-color: #102447;
 }
 
 .card-names {
+    font-size: x-large;
     color: #274d8a;
 }
 
-.card-text {
-    font-size: medium;
-}
-
 footer {
-    background-color: #274d8a;
+    background-color: #102447;
 }
 
 footer i {
     font-size: 30px;
+    color: #274d8a;
 }
 
 footer i:hover {
-    color: #767676;
+    color: #fefefe;
 }
 
 .copy {
-    background-color: #274d8af1 ;
+    background-color: #274d8a;
 }
 
 @keyframes blink {
