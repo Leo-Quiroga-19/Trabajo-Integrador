@@ -239,19 +239,23 @@ header .mobile-toggler {
 }
 
 h1 {
+  display: inline-block;
   color: #ff9100;
-  /* background-color: rgba(119, 136, 153, 0.27); */
+  background-color: transparent;
   border-right: 0.1em solid #274d8a;
   animation: blink 1s steps(1) infinite;
   width: 0;
   overflow: hidden;
   white-space: nowrap;
   animation: typing 8s steps(21) 1s 1 normal both, blink .3s steps(1);
+  margin-right: 10px;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: bold;
 }
 
 .home h2 {
     color: #274d8a;
-    background-color: #ffffff0b;
+    text-shadow: 1px 1px 2px #fff;
 }
 
 h2, h3, .cotizacion {
