@@ -5,6 +5,20 @@ body {
   overflow-x: hidden;
 }
 
+.logo {
+    font-family: cursive;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #274d8a
+}
+
+.logo-modal {
+    font-family: cursive;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
 a {
   text-decoration: none;
   color: currentColor;
@@ -238,8 +252,25 @@ h1 {
     color: #274d8a;
     background-color: #ffffff0b;
 }
+
 h2, h3 {
     color: #274d8a;
+}
+
+#nosotros p {
+    font-size: large;
+}
+
+.card-body {
+    background-color: #00000011;
+}
+
+.card-names {
+    color: #274d8a;
+}
+
+.card-text {
+    font-size: medium;
 }
 
 footer {
