@@ -33,7 +33,7 @@ $(document).ready(function () {
     ciudad;
     provincia;
     nacimiento;
-    mensaje;
+    factura;
     proyecto;
     presupuesto;
   }
@@ -88,7 +88,7 @@ $(document).ready(function () {
     f.nacimiento = $("#nacimiento").val();
     f.proyecto = $("#proyecto option:selected").val();
     f.presupuesto = $("#presupuesto option:selected").val();
-    f.mensaje = $("#mensaje").val();
+    f.factura = $("#factura").val();
 
     $("#nombreConfirmar").val(f.nombre);
     $("#apellidoConfirmar").val(f.apellido);
@@ -98,7 +98,7 @@ $(document).ready(function () {
     $("#nacimientoConfirmar").val(f.nacimiento);
     $("#proyectoConfirmar").val(f.proyecto);
     $("#presupuestoConfirmar").val(f.presupuesto);
-    $("#mensajeConfirmar").val(f.mensaje);
+    $("#facturaConfirmar").val(f.factura);
 
     $("#segundaVista").addClass("d-none");
     $("#confirmar").removeClass("d-none");
