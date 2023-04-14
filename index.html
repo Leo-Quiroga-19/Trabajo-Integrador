@@ -144,180 +144,12 @@
     </section>
     <hr><br>
 <!--Formulario Wizard-->
-    <!-- <section id="form-wizard" class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-8">
-            <form class="needs-validation mx-auto" id="primerVista" novalidate>
-                <h2 class="text-center"><strong>Contratanos!</strong></h2>
-                <p class="text-center">Te interesaron nuestros servicios? Completa el siguiente formulario y nosotros nos pondremos en contacto</p>
-                <div class="row my-2">
-                    <div class="col-12 col-md-6">
-                        <label for="nombre" class="form-label">Nombre/s:</label>
-                        <input type="text" class="form-control" id="nombre" required>
-                        <div class="invalid-feedback">
-                            El nombre es obligatorio
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <label for="apellido" class="form-label">Apellido/s:</label>
-                        <input type="text" class="form-control" id="apellido" required>
-                        <div class="invalid-feedback">
-                            El apellido es obligatorio
-                        </div>
-                    </div>
-                </div>
-                <div class="row my-2">
-                    <div class="col-12 col-md-6">
-                        <label for="email" class="form-label">Email:</label>
-                        <input type="email" class="form-control" id="email" required>
-                        <div class="invalid-feedback">
-                            El email es obligatorio de formato usuario@dominio.com
-                        </div>
-                    </div>
-                    <div class="col">
-                        <label for="nacimiento" class="form-label">Fecha de Nacimiento:</label>
-                        <input id="nacimiento" class="form-control" type="date" required>
-                        <div class="invalid-feedback">
-                            La fecha de nacimiento es obligatoria
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row my-2">
-                    <div class="col-12 col-md-6">
-                        <label for="ciudad" class="form-label">Ciudad:</label>
-                        <input type="text" class="form-control" id="ciudad" required>
-                        <div class="invalid-feedback">
-                            La ciudad es obligatoria
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <label for="provincia" class="form-label">Provincia:</label>
-                        <input type="text" class="form-control" id="provincia" required>
-                        <div class="invalid-feedback">
-                            La provincia es obligatoria
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center my-3">
-                    <button class="btn btn-outline-success" type="submit">Siguiente</button>
-                </div>
-            </form>
-            <form class="needs-validation d-none mx-auto my-4 border p-4" id="segundaVista" novalidate>
-                <h3 class="text-primary">Detalles</h3>
-
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <label for="proyecto" class="form-label">Es para un proyecto personal o empresarial?</label>
-                        <select class="form-select mb-3" id="proyecto" required>
-                            <option selected disabled value="">Seleccione una opción</option>
-                            <option value="empresa">Empresa</option>
-                            <option value="personal">Personal</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Seleccione una opción
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <label for="presupuesto" class="form-label">Presupuesto (Aproximado):</label>
-                        <select class="form-select mb-3" id="presupuesto" required>
-                            <option selected disabled value="">Seleccione una opción</option>
-                            <option value="10-50">10$ - 50$</option>
-                            <option value="50-100">50$ - 100$</option>
-                            <option value="100-o-mas">100$ o más</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Seleccione una opción
-                        </div>
-                    </div>
-                </div>
-                <div class="row my-2">
-                    <div class="col-12 col-md-12">
-                        <label for="mensaje" class="form-label">Mensaje:</label>
-                        <div class="input-group">
-                            <textarea name="" id="mensaje" class="form-control" cols="30" rows="10"
-                                placeholder="Pequeña descripcion del producto deseado" required></textarea>
-                            <div class="invalid-feedback">
-                                Inserte un mensaje
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-        <div class="text-center my-3">
-            <div class="btn btn-outline-danger" id="btnSegundaVistaAtras">Volver Atras</div>
-            <button class="btn btn-outline-success" type="submit">Siguiente</button>
-        </div>
-        </form>
-
-        <form class="mx-auto d-none border p-4" id="confirmar" action="/url">
-            <h2 class="text-center text-primary">Confirmar envio</h2>
-            <p class="text-center">Revise los datos antes de enviar!</p>
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <label for="nombreConfirmar" class="form-label text-primary">Nombre/s:</label>
-                    <input type="text" class="form-control" id="nombreConfirmar" readonly>
-                </div>
-                <div class="col-12 col-md-6">
-                    <label for="apellidoConfirmar" class="form-label text-primary">Apellido/s:</label>
-                    <input type="text" class="form-control" id="apellidoConfirmar" readonly>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <label for="emailConfirmar" class="form-label text-primary">Email:</label>
-                    <input type="text" class="form-control" id="emailConfirmar" readonly>
-                </div>
-                <div class="col-12 col-md-6">
-                    <label for="nacimientoConfirmar" class="form-label text-primary">Nacimiento:</label>
-                    <input type="text" class="form-control" id="nacimientoConfirmar" readonly>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <label for="ciudadConfirmar" class="form-label text-primary">Ciudad:</label>
-                    <input type="text" class="form-control" id="ciudadConfirmar" readonly>
-                </div>
-                <div class="col-12 col-md-6">
-                    <label for="provinciaConfirmar" class="form-label text-primary">Provincia:</label>
-                    <input type="text" class="form-control" id="provinciaConfirmar" readonly>
-                </div>
-            </div>
-
-            <hr class="my-3 ">
-
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <label for="proyectoConfirmar" class="form-label text-primary">Proyecto:</label>
-                    <input type="text" class="form-control" id="proyectoConfirmar" readonly>
-                </div>
-                <div class="col-12 col-md-6">
-                    <label for="presupuestoConfirmar" class="form-label text-primary">Presupuesto:</label>
-                    <input type="text" class="form-control" id="presupuestoConfirmar" readonly>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-12">
-                    <label for="mensajeConfirmar" class="form-label text-primary">Mensaje:</label>
-                    <textarea name="" id="mensaje" class="form-control" cols="30" rows="10" readonly></textarea>
-                </div>
-            </div>
-
-            <div class="text-center">
-                <div class="btn btn-outline-danger btn-lg my-4" id="btnVolverConfirma">Volver
-                </div>
-                <div class="btn btn-outline-success btn-lg my-4" id="btnConfirmarDatos">Confirmar Envio</div>
-                <div class="btn btn-outline-success btn-lg my-4" id="btnExportarPDF">Exportar como PDF</div>
-            </div>
-        </form>
-    </div>
-</div> -->
 <div class="row justify-content-center">
   <div class="col-12 col-md-8">
     <form class="needs-validation mx-auto" id="primerVista" novalidate>
       <h2 class="text-center"><strong>Contratanos!</strong></h2>
       <p class="text-center">Te interesaron nuestros servicios? Completa el siguiente formulario y nosotros nos pondremos en contacto</p>
-        <div class="row my-2">
+        <div class="row my-2 mt-5">
           <div class="col-12 col-md-6">
             <label for="nombre" class="form-label">Nombre/s</label>
              <input type="text" class="form-control" id="nombre" required>
@@ -365,12 +197,12 @@
               </div>
           </div>
         </div>
-        <div class="text-center my-3">
-          <button class="btn btn-success" type="submit">Siguiente</button>
+        <div class="text-center my-3 mt-5">
+          <button class="btn btn-outline-success" type="submit">Siguiente</button>
         </div>
     </form>
     <form class="needs-validation d-none mx-auto my-4" id="segundaVista" novalidate>
-      <h3 class="text-center">Detalles</h3>
+      <h3 class="text-center mb-5">Detalles</h3>
       <div class="row">
         <div class="col-12 col-md-6">
           <label for="proyecto" class="form-label">Es para un proyecto personal o empresarial?</label>
@@ -411,63 +243,63 @@
             </div>
         </div>
       </div>
-      <div class="text-center my-3">
-        <div class="btn btn-danger" id="btnSegundaVistaAtras">Volver Atras</div>
-          <button class="btn btn-success" type="submit">Siguiente</button>
+      <div class="text-center my-3 mt-5">
+        <div class="btn btn-outline-danger" id="btnSegundaVistaAtras">Volver Atras</div>
+          <button class="btn btn-outline-success" type="submit">Siguiente</button>
         </div>
     </form>
-    <form class="mx-auto d-none border p-4" id="confirmar" action="/url" >
-      <h2 class="text-center">Confirmar envio de datos</h2>
+    <form class="mx-auto d-none p-4" id="confirmar" action="/url" >
+      <h2 class="text-center mb-5">Confirmar envio de datos</h2>
         <div class="row">
           <div class="col-12 col-md-6">
-            <label for="nombreConfirmar" class="form-label text-primary">Nombre/s</label>
+            <label for="nombreConfirmar" class="form-label">Nombre/s</label>
             <input type="text" class="form-control" id="nombreConfirmar" readonly>
           </div>
           <div class="col-12 col-md-6">
-            <label for="apellidoConfirmar" class="form-label text-primary">Apellido/s</label>
+            <label for="apellidoConfirmar" class="form-label">Apellido/s</label>
             <input type="text" class="form-control" id="apellidoConfirmar" readonly>
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-md-6">
-            <label for="emailConfirmar" class="form-label text-primary">Email</label>
+            <label for="emailConfirmar" class="form-label">Email</label>
             <input type="text" class="form-control" id="emailConfirmar" readonly>
           </div>
           <div class="col-12 col-md-6">
-            <label for="nacimientoConfirmar" class="form-label text-primary">Nacimiento</label>
+            <label for="nacimientoConfirmar" class="form-label">Nacimiento</label>
             <input type="text" class="form-control" id="nacimientoConfirmar" readonly>
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-md-6">
-            <label for="ciudadConfirmar" class="form-label text-primary">Ciudad</label>
+            <label for="ciudadConfirmar" class="form-label">Ciudad</label>
             <input type="text" class="form-control" id="ciudadConfirmar" readonly>
           </div>
           <div class="col-12 col-md-6">
-            <label for="provinciaConfirmar" class="form-label text-primary">Provincia</label>
+            <label for="provinciaConfirmar" class="form-label">Provincia</label>
             <input type="text" class="form-control" id="provinciaConfirmar" readonly>
           </div>
         </div><hr class="my-3 ">
         <div class="row">
           <div class="col-12 col-md-6">
-            <label for="proyectoConfirmar" class="form-label text-primary">Es para un proyecto personal o empresarial?</label>
+            <label for="proyectoConfirmar" class="form-label">Es para un proyecto personal o empresarial?</label>
             <input type="text" class="form-control" id="proyectoConfirmar" readonly>
           </div>
           <div class="col-12 col-md-6">
-            <label for="presupuestoConfirmar" class="form-label text-primary">Presupuesto (Aproximado): </label>
+            <label for="presupuestoConfirmar" class="form-label">Presupuesto (Aproximado): </label>
             <input type="text" class="form-control" id="presupuestoConfirmar" readonly>
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-md-6">
-            <label for="facturaConfirmar" class="form-label text-primary">Requiere factura?</label>
+            <label for="facturaConfirmar" class="form-label">Requiere factura?</label>
             <input type="text" class="form-control" id="facturaConfirmar" readonly>
           </div>
         </div>
-        <div class="text-center">
+        <div class="text-center mt-5">
           <div class="btn btn-outline-danger btn-lg my-4" id="btnVolverConfirma">Volver al Formulario</div>
           <div class="btn btn-outline-success btn-lg my-4" id="btnConfirmarDatos">Confirmar Envio</div>
-          <div class="btn btn-outline-success btn-lg my-4" id="btnExportarPDF">Imprimir PDF</div>
+          <div class="btn btn-outline-primary btn-lg my-4" id="btnExportarPDF">Imprimir PDF</div>
         </div>
     </form>
   </div>

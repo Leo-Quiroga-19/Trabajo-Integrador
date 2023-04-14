@@ -227,7 +227,7 @@ header .mobile-toggler {
 }
 
 #home {
-  background-image: url(/image/img-body.jpg);
+  background-image: url(../image/img-body.jpg);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -273,6 +273,11 @@ p {
 .card-names {
     font-size: x-large;
     color: #274d8a;
+}
+
+form label {
+  color: #274d8a;
+  font-size: large;
 }
 
 footer {
