@@ -6,17 +6,17 @@ body {
 }
 
 .logo {
-    font-family: cursive;
-    font-size: 20px;
-    letter-spacing: 4px;
-    color: #fff
+  font-family: cursive;
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: #fff;
 }
 
 .logo-modal {
-    font-family: cursive;
-    font-size: 20px;
-    letter-spacing: 4px;
-    color: #fff;
+  font-family: cursive;
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: #fff;
 }
 
 a {
@@ -43,7 +43,6 @@ header .container-fluid {
   align-items: center;
   justify-content: space-between;
 }
-
 
 header .navb-logo img {
   width: 140px;
@@ -247,32 +246,34 @@ h1 {
   width: 0;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 8s steps(21) 1s 1 normal both, blink .3s steps(1);
+  animation: typing 8s steps(21) 1s 1 normal both, blink 0.3s steps(1);
   margin-right: 10px;
   text-shadow: 1px 1px 1px #000;
   font-weight: bold;
 }
 
 .home h2 {
-    color: #274d8a;
-    text-shadow: 1px 1px 2px #fff;
+  color: #274d8a;
+  text-shadow: 1px 1px 2px #fff;
 }
 
-h2, h3, .cotizacion {
-    color: #274d8a;
+h2,
+h3,
+.cotizacion {
+  color: #274d8a;
 }
 
 p {
-    font-size: large;
+  font-size: large;
 }
 
 .card-body {
-    background-color: #102447;
+  background-color: #102447;
 }
 
 .card-names {
-    font-size: x-large;
-    color: #274d8a;
+  font-size: x-large;
+  color: #274d8a;
 }
 
 form label {
@@ -281,20 +282,20 @@ form label {
 }
 
 footer {
-    background-color: #102447;
+  background-color: #102447;
 }
 
 footer i {
-    font-size: 30px;
-    color: #274d8a;
+  font-size: 30px;
+  color: #274d8a;
 }
 
 footer i:hover {
-    color: #fefefe;
+  color: #fefefe;
 }
 
 .copy {
-    background-color: #274d8a;
+  background-color: #274d8a;
 }
 
 @keyframes blink {
@@ -307,35 +308,36 @@ footer i:hover {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
     border-right: none;
-    animation: blink .3s steps(1) forwards;
+    animation: blink 0.3s steps(1) forwards;
   }
-
 }
 
 @media (max-width: 578px) {
-    .modal-dialog {
-      width: 82%;
-    }
-    .img-p {
-      width: 50%;
-      margin-bottom: 2rem;
-    }
+  .modal-dialog {
+    width: 82%;
+  }
+
+  .img-p {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 767px) {
-    .section-1 p {
-      font-size: 50px;
-      text-align: start;
-      width: 70%;
-      margin: auto;
-    }
+  .section-1 p {
+    font-size: 50px;
+    text-align: start;
+    width: 70%;
+    margin: auto;
+  }
 }
 
 @media (max-width: 992px) {
-    header .container-fluid {
-      padding: 0 5%;
-    }
+  header .container-fluid {
+    padding: 0 5%;
+  }
 }
