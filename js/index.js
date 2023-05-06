@@ -6,19 +6,12 @@ window.addEventListener("load", function () {
     timeout: 0,
   };
 
-  var contador = 0;
-
   $.ajax(settings).done(function (response) {
-    jQuery.each(response, function (i, item) {
-      if (contador < 2) {
-        console.log(item.casa.nombre);
-        $("#cotizaciones").append(
-          `<strong class="cotizacion">${item.casa.nombre}</strong>:  Compra: ${item.casa.compra} $   |  Venta ${item.casa.venta} $ </br>`
-        );
-        contador++;
-      } else {
-        return false;
-      }
+    response.slice(0, 2).forEach(function (item) {
+      console.log(item.casa.nombre);
+      $("#cotizaciones").append(
+        `<strong class="cotizacion">${item.casa.nombre}</strong>: Compra: ${item.casa.compra} $ | Venta ${item.casa.venta} $ <br>`
+      );
     });
   });
 });
