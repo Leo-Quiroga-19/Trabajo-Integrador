@@ -40,3 +40,4 @@ Ademas se utilizaron las siguientes webs:
 - https://www.freepik.es/ - Imagenes
 - https://mycolor.space - Colores
 - https://www.svgrepo.com/ - Iconos SVG
+- https://www.iloveimg.com/es/comprimir-imagen - Para comprimir imagenes
